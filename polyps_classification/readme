@@ -1,0 +1,10 @@
+All of the models are stored in google drive, and to see if the evaluation for overall cascaded network works, use the models in 'results-balance' which train the network in 2 stages with oversampling balanced data.
+All of the models trained on unbalanced dataset are stored in 'results-cascade_1st'/ 'results-cascade_2nd'.
+In google drive, all the data are stored in 'data' folder. In 'data-train-cascade1_balance', 'data-train-cascade2_balance' they are images with balanced classes, and 'data-train-cascade2_select_balance' contains oversamlped data for the second stage and these images are cropped.
+In 'data-train-polyps_balance', the folder contains all of the oversampled images and the classes are balance , so use this folder to train vanilla 3-classes classefier.
+'data-train-cascade1','data-train-cascade2','data-train-cascade2_select','data-train-polyps' consist original dataset without oversampling.
+'data-validation' contains all of the validation data for each stage/for 3 classes, they are original raw images.
+
+Run 'main' to train the network, and 'connection_evaluation' is used to connect 2 models and evaluate overall results.
+
+  
